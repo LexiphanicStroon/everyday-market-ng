@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let c of categories">
+        <app-category-menu-item [categoryName]="c.name"
+        (selected)="onCategorySelected($event)">
+        </app-category-menu-item>
+    </li>
+  </ul>
